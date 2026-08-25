@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* configuración do corpo da páxina */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #171717;
+  background-color: #f2f0ef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* cabeceira e menú principal */
+header {
+  border-bottom: 1px solid #e0dedc;
+}
+
+/* etiqueta de navegación principal */
+nav {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* estilos do logo */
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #171717;
+  text-decoration: none;
+}
+
+/* lista non ordenada do menú (ul) */
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+/* ligazóns individuais dentro do menú */
+nav a {
+  color: #171717;
+  text-decoration: none;
+}
+
+/* bloque central de contido */
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 3rem 1.5rem;
+}
+
+/* título principal da páxina */
+main h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* pé da páxina*/
+footer {
+  background-color: #f2f0ef;
+  border-top: 1px solid #e0dedc;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #171717;
+}

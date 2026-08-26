@@ -34,10 +34,14 @@ nav {
 
 /* estilos do logo */
 .logo {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #171717;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  height: 50;
+  width: 200px;
 }
 
 /* lista non ordenada do menú (ul) */

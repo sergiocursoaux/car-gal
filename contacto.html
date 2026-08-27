@@ -75,44 +75,83 @@
                     </div>
                 </div>
 
-                <footer>
-                    <div class="footer-container">
-                        <div class="footer-col">
-                            <img src="img/02-logo-amarelo.webp" alt="Carrocerías Galicia" class="footer-logo">
-                            <p>Líderes en Galicia en reparación
-                                e mantemento de carrocerías.</p>
+                <div class="contact-form-card">
+                    <h3>Formulario de contacto</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome completo *</label>
+                            <input type="text" id="nome" name="nome" required>
                         </div>
-                        <div class="footer-col">
-                            <h4>NAVEGACIÓN</h4>
-                            <ul>
-                                <li><a href="sobre-nos.html">Sobre nós</a></li>
-                                <li><a href="servizos.html">Servizos</a></li>
-                                <li><a href="proxectos.html">Proxectos</a></li>
-                                <li><a href="catalogo.html">Catálogo</a></li>
-                            </ul>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-                        <div class="footer-col">
-                            <h4>CONTACTO</h4>
-                            <ul>
-                                <li>+34 981 000 000</li>
-                                <li>info@carrocerias.gal</li>
-                                <li>Polígono de Santa Comba</li>
-                            </ul>
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="" disabled selected>Seleccione unha opción...</option>
+                                <option value="orzamento">Solicitude de orzamento</option>
+                                <option value="informacion">Información xeral</option>
+                                <option value="reparacion">Reparación</option>
+                                <option value="recambios">Recambios e pezas</option>
+                                <option value="outro">Outro</option>
+                            </select>
                         </div>
-                        <div class="footer-col">
-                            <h4>SOCIAL</h4>
-                            <div class="social-icons">
-                                <a href="#" class="social-circle">IG</a>
-                                <a href="#" class="social-circle">TK</a>
-                            </div>
+                        <div class="form-group">
+                            <label for="mensaxe">Mensaxe *</label>
+                            <textarea id="mensaxe" name="mensaxe" placeholder="Como podemos axudarlle?"
+                                required></textarea>
                         </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="privacidade" name="privacidade" required>
+                            <label for="privacidade">Acepto a <a href="termos-legais-privacidade.html">Política de
+                                    Privacidade</a> e o tratamento de datos. *</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar mensaxe</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-col">
+                    <img src="img/02-logo-amarelo.webp" alt="Carrocerías Galicia" class="footer-logo">
+                    <p>Líderes en Galicia en reparación
+                        e mantemento de carrocerías.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVEGACIÓN</h4>
+                    <ul>
+                        <li><a href="sobre-nos.html">Sobre nós</a></li>
+                        <li><a href="servizos.html">Servizos</a></li>
+                        <li><a href="proxectos.html">Proxectos</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li>+34 981 000 000</li>
+                        <li>info@carrocerias.gal</li>
+                        <li>Polígono de Santa Comba</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SOCIAL</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-circle">IG</a>
+                        <a href="#" class="social-circle">TK</a>
                     </div>
-                    <div class="footer-bottom">
-                        <p>&copy; 2026 Carrocerías Galicia.</p>
-                        <div class="legal-links">
-                            <a href="termos-legais-aviso-legal.html">Aviso Legal</a>
-                            <a href="termos-legais-privacidade.html">Privacidade</a>
-                            <a href="termos-legais-cookies.html">Cookies</a>
-                        </div>
-                    </div>
-                </footer>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Carrocerías Galicia.</p>
+                <div class="legal-links">
+                    <a href="termos-legais-aviso-legal.html">Aviso Legal</a>
+                    <a href="termos-legais-privacidade.html">Privacidade</a>
+                    <a href="termos-legais-cookies.html">Cookies</a>
+                </div>
+            </div>
+        </footer>

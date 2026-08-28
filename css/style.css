@@ -31,9 +31,52 @@ body {
   align-items: center;
 }
 
-/* cabeceira e menú principal */
+/* CABECEIRA E NAVEGACIÓN */
 header {
-  border-bottom: 1px solid #e0dedc;
+  background-color: #F2F0EF;
+  width: 100%;
+}
+
+nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 200px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #171717;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #171717;
+  padding-bottom: 4px;
+}
+
+.btn-primary {
+  background: #2C4C5C;
+  color: #F2F0EF;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
 /* etiqueta de navegación principal */

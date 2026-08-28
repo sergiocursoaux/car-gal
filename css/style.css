@@ -813,3 +813,95 @@ footer {
     color: #171717;
     text-align: left;
 }
+
+/* GALERÍA E FILTROS */
+.projects-filters {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    border: 1px solid #B8BFC1;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #171717;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.filter-btn.active {
+    background: #2C4C5C;
+    color: #F2F0EF;
+    border-color: #2C4C5C;
+}
+
+.projects-grid {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 16px;
+    background-color: #B8BFC1;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.project-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717;
+    margin-bottom: 8px;
+}
+
+.project-card .meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6C8494;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.project-card .meta .dot {
+    width: 4px;
+    height: 4px;
+    background: #6C8494;
+    border-radius: 50%;
+}
+
+.btn-load-more {
+    display: block;
+    margin: 64px auto 0;
+    padding: 16px 40px;
+    background: transparent;
+    color: #2C4C5C;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid #2C4C5C;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+}

@@ -1657,3 +1657,52 @@ footer {
     color: #2C4C5C;
     text-decoration: none;
 }
+
+/* PÁXINAS LEGAIS */
+.legal-content {
+    background: #F2F0EF;
+    padding: 64px 80px 96px;
+}
+
+.legal-content-inner {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.legal-content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #171717;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.legal-content h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #171717;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.legal-content p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #171717;
+    margin-bottom: 16px;
+}
+
+.legal-content ul {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.legal-content li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #171717;
+    margin-bottom: 8px;
+}

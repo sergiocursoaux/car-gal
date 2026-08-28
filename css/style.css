@@ -589,3 +589,156 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
+
+/* SERVIZOS DETALLADA */
+.service-detail {
+    background: #F2F0EF;
+    padding: 96px 80px;
+}
+
+.service-detail-row {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.service-detail-row.reverse {
+    direction: rtl;
+}
+
+.service-detail-row.reverse > * {
+    direction: ltr;
+}
+
+.service-detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.service-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    width: fit-content;
+}
+
+.badge-reparacion { background: #B8BFC1; color: #2E7D32; }
+.badge-especialidade { background: #B8BFC1; color: #2E7D32; }
+.badge-comercial { background: #B8BFC1; color: #2E7D32; }
+
+.service-detail-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #171717;
+}
+
+.service-detail-content > p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #171717;
+}
+
+.service-detail-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 16px;
+    background-color: #B8BFC1;
+    background-size: cover;
+    background-position: center;
+}
+
+.check-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.check-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #171717;
+}
+
+.check-list li::before {
+    content: "✓";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #2E7D32;
+    color: #F2F0EF;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.price-table {
+    width: 100%;
+    margin-top: 16px;
+    border: 1px solid #E0DDDB;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.price-table-header {
+    font-size: 14px;
+    font-weight: 700;
+    color: #171717;
+    padding: 16px 24px;
+    border-bottom: 1px solid #E0DDDB;
+}
+
+.price-table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid #E0DDDB;
+    font-size: 14px;
+    font-weight: 500;
+    color: #171717;
+}
+
+.price-table-row:last-child {
+    border-bottom: none;
+}
+
+.price-table-row .price {
+    font-weight: 700;
+    color: #2C4C5C;
+}
+
+.tag-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 8px 16px;
+    border: 1px solid #B8BFC1;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #171717;
+    background: transparent;
+}

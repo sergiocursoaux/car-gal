@@ -989,3 +989,249 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
+
+/* LAYOUT E SIDEBAR */
+.catalog-layout {
+    background: #F2F0EF;
+    padding: 48px 80px 96px;
+}
+
+.catalog-layout-inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 48px;
+}
+
+.catalog-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sidebar-group h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6C8494;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E0DDDB;
+}
+
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #171717;
+    cursor: pointer;
+}
+
+.sidebar-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #B8BFC1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.sidebar-checkbox.checked {
+    background: #2C4C5C;
+    border-color: #2C4C5C;
+}
+
+.sidebar-checkbox.checked::after {
+    content: "✓";
+    color: #F2F0EF;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.sidebar-radio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #B8BFC1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.sidebar-radio.checked {
+    border-color: #2C4C5C;
+}
+
+.sidebar-radio.checked::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #2C4C5C;
+    border-radius: 50%;
+}
+
+.catalog-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #F2F0EF;
+    border: 1px solid #B8BFC1;
+    border-radius: 8px;
+    padding: 12px 16px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-bar .search-icon {
+    color: #6C8494;
+    font-size: 16px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #171717;
+    outline: none;
+    width: 100%;
+}
+
+.search-bar input::placeholder {
+    color: #6C8494;
+}
+
+.sort-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sort-group label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6C8494;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.sort-select {
+    padding: 10px 16px;
+    border: 1px solid #B8BFC1;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #171717;
+    background: #F2F0EF;
+    cursor: pointer;
+    appearance: auto;
+}
+
+.catalog-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.catalog-product-card {
+    background: #F2F0EF;
+    border: 1px solid #B8BFC1;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease;
+}
+
+.catalog-product-image {
+    height: 220px;
+    background-color: #B8BFC1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.catalog-product-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.catalog-product-info .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-product-info .category {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6C8494;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.badge-stock {
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.badge-stock.in-stock { background: #B8BFC1; color: #2E7D32; }
+.badge-stock.low-stock { background: #B8BFC1; color: #E65100; }
+.badge-stock.out-of-stock { background: #B8BFC1; color: #D32F2F; }
+
+.catalog-product-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.catalog-product-info .ref {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6C8494;
+}
+
+.catalog-product-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 24px 24px;
+    margin-top: auto;
+}
+
+.arrow-link {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #B8BFC1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C4C5C;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}

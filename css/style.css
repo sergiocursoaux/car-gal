@@ -221,6 +221,115 @@ nav {
     gap: 8px;
 }
 
+/* SECCIÓN CATÁLOGO */
+.catalog {
+    background: #F2F0EF;
+    padding: 96px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.catalog-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.catalog-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #171717;
+    margin-bottom: 16px;
+}
+
+.catalog-header p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #171717;
+    max-width: 576px;
+}
+
+.btn-dark {
+    background: #2C4C5C;
+    color: #F2F0EF;
+    padding: 12px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.product-card {
+    background: #F2F0EF;
+    border: 1px solid #B8BFC1;
+    border-radius: 16px;
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.product-image {
+    height: 200px;
+    background-color: #B8BFC1;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #F2F0EF;
+}
+
+.badge-green { background: #2E7D32; }
+.badge-red { background: #D32F2F; }
+
+.product-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.category {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6C8494;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.product-info h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #171717;
+}
+
+.ref {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6C8494;
+}
+
 /* estilos do logo */
 .logo {
   display: flex;

@@ -434,3 +434,26 @@ footer {
     color: #B8BFC1;
     text-decoration: none;
 }
+
+/* ENCABEZAMENTO DE PÁXINA */
+.page-header {
+    background: #F2F0EF;
+    padding: 64px 80px 48px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #171717;
+    margin-bottom: 16px;
+}
+
+.page-header p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #171717;
+    line-height: 28px;
+    max-width: 672px;
+    margin: 0 auto;
+}

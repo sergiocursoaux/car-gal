@@ -528,3 +528,64 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+/* EQUIPO */
+.team-section {
+    background: #F2F0EF;
+    padding: 96px 80px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #171717;
+    margin-bottom: 16px;
+}
+
+.team-section > p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #171717;
+    line-height: 28px;
+    max-width: 672px;
+    margin: 0 auto 64px;
+}
+
+.team-grid {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    background-color: #B8BFC1;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.team-member h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717;
+    margin-bottom: 8px;
+}
+
+.team-member .role {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6C8494;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}

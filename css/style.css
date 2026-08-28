@@ -79,16 +79,69 @@ nav {
   text-decoration: none;
 }
 
-/* etiqueta de navegación principal */
-nav {
-  max-width: 1200px;
-  margin-inline: auto;
-  padding: 1rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+/* SECCIÓN HERO */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 596px;
+    background: linear-gradient(rgba(44, 76, 92, 0.8), rgba(44, 76, 92, 0.8)), url('../img/hero-bg.jpg') center/cover no-repeat;
+    background-color: #2C4C5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.hero-container {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero h1 {
+    color: #F2F0EF;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 768px;
+}
+
+.hero p {
+    color: #F2F0EF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    max-width: 672px;
+    margin-bottom: 36px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-yellow {
+    background: #F3E308;
+    color: #2C4C5C;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #F2F0EF;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #F2F0EF;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 /* estilos do logo */

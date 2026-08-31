@@ -59,6 +59,7 @@ nav ul {
 
 .logo img {
   height: 150px;
+  width: auto;
 }
 
 .nav-links {
@@ -842,6 +843,10 @@ footer {
     border-color: #2C4C5C;
 }
 
+.filter-btn:hover:not(.active) {
+    border-color: #2C4C5C;
+}
+
 .projects-grid {
     max-width: 1280px;
     width: 100%;
@@ -988,6 +993,11 @@ footer {
     color: #6C8494;
     text-transform: uppercase;
     letter-spacing: 0.6px;
+}
+
+.btn-load-more:hover {
+    background: #2C4C5C;
+    color: #F2F0EF;
 }
 
 /* LAYOUT E SIDEBAR */
@@ -1235,6 +1245,13 @@ footer {
     font-size: 16px;
     transition: all 0.2s ease;
 }
+
+.arrow-link:hover {
+    background: #2C4C5C;
+    color: #F2F0EF;
+    border-color: #2C4C5C;
+}
+
 
 /* FICHA DE PRODUCTO */
 .product-detail {
@@ -1657,6 +1674,9 @@ footer {
     color: #2C4C5C;
     text-decoration: none;
 }
+
+.map-link:hover {
+    background: #B8BFC1;
 
 /* PÁXINAS LEGAIS */
 .legal-content {

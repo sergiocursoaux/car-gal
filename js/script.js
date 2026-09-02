@@ -263,6 +263,77 @@ function initCatalogSidebar() {
       });
     });
   }
+
+  // FORMULARIO DE CONTACTO
+  function initContactForm() {
+    var form = document.querySelector(".contact-form-card form");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var nome = form.querySelector("#nome");
+      var email = form.querySelector("#email");
+      var asunto = form.querySelector("#asunto");
+      var mensaxe = form.querySelector("#mensaxe");
+      var privacidade = form.querySelector("#privacidade");
+      var submitBtn = form.querySelector(".btn-submit");
+
+      // Limpar erros anteriores
+      form.querySelectorAll(".form-error").forEach(function (el) { el.remove(); });
+      form.querySelectorAll("input, select, textarea").forEach(function (el) {
+        el.style.borderColor = "";
+      });
+
+      var valid = true;
+
+      function showError(field, message) {
+        var errorEl = document.createElement("span");
+        errorEl.className = "form-error";
+        errorEl.textContent = message;
+        errorEl.style.color = "#D32F2F";
+        errorEl.style.fontSize = "12px";
+        errorEl.style.fontWeight = "500";
+        errorEl.style.marginTop = "4px";
+        errorEl.style.display = "block";
+        field.parentElement.appendChild(errorEl);
+        field.style.borderColor = "#D32F2F";
+        valid = false;
+      }
+
+      if (!nome.value.trim()) {
+        showError(nome, "Por favor, introduza o seu nome.");
+      }
+      if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        showError(email, "Por favor, introduza un correo electrónico válido.");
+      }
+      if (!asunto.value) {
+        showError(asunto, "Por favor, seleccione un asunto.");
+      }
+      if (!mensaxe.value.trim()) {
+        showError(mensaxe, "Por favor, escriba a súa mensaxe.");
+      }
+      if (!privacidade.checked) {
+        showError(privacidade, "Debe aceptar a Política de Privacidade.");
+      }
+
+      if (!valid) return;
+
+      // Simular envío
+      submitBtn.textContent = "Enviando…";
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = "0.7";
+
+      setTimeout(function () {
+        form.innerHTML =
+          '<div style="text-align:center; padding:40px 0;">' +
+          '<div style="font-size:48px; margin-bottom:16px;">✓</div>' +
+          '<h3 style="color:#2E7D32; margin-bottom:8px;">Mensaxe enviada</h3>' +
+          '<p style="color:#6C8494;">Grazas por contactar connosco. <br> Responderémoslle o antes posible.</p>' +
+          "</div>";
+      }, 1000);
+    });
+  }
   
   // INICIALIZACIÓN
   document.addEventListener("DOMContentLoaded", function () {
@@ -272,5 +343,6 @@ function initCatalogSidebar() {
     initCatalogSidebar();
     initCatalogSearch();
     initProductGallery();
+    initContactForm();
   });
 })();

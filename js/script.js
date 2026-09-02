@@ -44,7 +44,7 @@
 
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        
+
         // Actualizar botón activo
         filterBtns.forEach(function (b) { b.classList.remove("active"); });
         btn.classList.add("active");
@@ -70,9 +70,28 @@
     });
   }
 
+  // BOTÓN "CARGAR MÁIS"
+  function initLoadMore() {
+    var loadMoreBtns = document.querySelectorAll(".btn-load-more");
+    loadMoreBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var originalText = btn.textContent;
+        btn.textContent = "Cargando…";
+        btn.disabled = true;
+
+        setTimeout(function () {
+          btn.textContent = "Non hai máis elementos";
+          btn.style.opacity = "0.5";
+          btn.style.cursor = "default";
+        }, 800);
+      });
+    });
+  }
+
   // INICIALIZACIÓN
   document.addEventListener("DOMContentLoaded", function () {
     initFaqAccordion();
     initProjectFilters();
+    initLoadMore();
   });
 })();

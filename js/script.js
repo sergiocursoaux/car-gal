@@ -36,8 +36,43 @@
     });
   }
 
+// FILTROS DE GALERÍA DE PROXECTOS 
+  function initProjectFilters() {
+    var filterBtns = document.querySelectorAll(".filter-btn");
+    var projectCards = document.querySelectorAll(".project-card");
+    if (!filterBtns.length || !projectCards.length) return;
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        
+        // Actualizar botón activo
+        filterBtns.forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+
+        var filter = btn.getAttribute("data-filter");
+
+        projectCards.forEach(function (card) {
+          var category = card.getAttribute("data-category");
+          if (filter === "todos" || category === filter) {
+            card.style.display = "";
+            card.style.opacity = "0";
+            card.style.transform = "translateY(12px)";
+            requestAnimationFrame(function () {
+              card.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+            });
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  }
+
   // INICIALIZACIÓN
   document.addEventListener("DOMContentLoaded", function () {
     initFaqAccordion();
+    initProjectFilters();
   });
 })();

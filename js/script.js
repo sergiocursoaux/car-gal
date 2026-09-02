@@ -334,6 +334,21 @@ function initCatalogSidebar() {
       }, 1000);
     });
   }
+
+  // BARRA DE NAVEGACIÓN
+  function initActiveNav() {
+    var currentPage = window.location.pathname.split("/").pop() || "index.html";
+    var navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(function (link) {
+      var href = link.getAttribute("href");
+      if (href === currentPage) {
+        link.style.fontWeight = "700";
+        link.style.borderBottom = "2px solid #171717";
+        link.style.paddingBottom = "4px";
+      }
+    });
+  }
   
   // INICIALIZACIÓN
   document.addEventListener("DOMContentLoaded", function () {
@@ -344,5 +359,6 @@ function initCatalogSidebar() {
     initCatalogSearch();
     initProductGallery();
     initContactForm();
+    initActiveNav();
   });
 })();

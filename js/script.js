@@ -219,6 +219,31 @@ function initCatalogSidebar() {
       sortSelect.addEventListener("change", filterProducts);
     }
   }
+
+  // BUSCA NO CATÁLOGO
+  function initCatalogSearch() {
+    var searchInput = document.querySelector(".search-bar input");
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", function () {
+      var query = searchInput.value.toLowerCase().trim();
+      var products = document.querySelectorAll(".catalog-product-card");
+
+      products.forEach(function (card) {
+        var name = card.querySelector("h4");
+        var ref = card.querySelector(".ref");
+        var text = "";
+        if (name) text += name.textContent.toLowerCase();
+        if (ref) text += " " + ref.textContent.toLowerCase();
+
+        if (!query || text.indexOf(query) !== -1) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  }
   
   // INICIALIZACIÓN
   document.addEventListener("DOMContentLoaded", function () {
@@ -226,5 +251,6 @@ function initCatalogSidebar() {
     initProjectFilters();
     initLoadMore();
     initCatalogSidebar();
+    initCatalogSearch();
   });
 })();

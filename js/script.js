@@ -244,6 +244,25 @@ function initCatalogSidebar() {
       });
     });
   }
+
+  // GALERÍA FICHA DE PRODUCTO
+  function initProductGallery() {
+    var thumbnails = document.querySelectorAll(".product-thumbnail");
+    var mainImage = document.querySelector(".product-main-image");
+    if (!thumbnails.length || !mainImage) return;
+
+    thumbnails.forEach(function (thumb) {
+      thumb.addEventListener("click", function () {
+        thumbnails.forEach(function (t) { t.classList.remove("active"); });
+        thumb.classList.add("active");
+
+        var bgImage = thumb.style.backgroundImage;
+        if (bgImage) {
+          mainImage.style.backgroundImage = bgImage;
+        }
+      });
+    });
+  }
   
   // INICIALIZACIÓN
   document.addEventListener("DOMContentLoaded", function () {
@@ -252,5 +271,6 @@ function initCatalogSidebar() {
     initLoadMore();
     initCatalogSidebar();
     initCatalogSearch();
+    initProductGallery();
   });
 })();

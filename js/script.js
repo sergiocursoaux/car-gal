@@ -325,6 +325,94 @@
         });
     }
 
+    // LIGHTBOX
+    function initLightbox() {
+        var overlay = document.querySelector(".lightbox-overlay");
+        if (!overlay) return;
+
+        var imgEl = overlay.querySelector("img");
+        var captionEl = overlay.querySelector(".lightbox-caption");
+        var counterEl = overlay.querySelector(".lightbox-counter");
+        var closeBtn = overlay.querySelector(".lightbox-close");
+        var prevBtn = overlay.querySelector(".lightbox-prev");
+        var nextBtn = overlay.querySelector(".lightbox-next");
+
+        var items = [];
+        var currentIndex = 0;
+
+        function collectImages() {
+            items = [];
+            var clickables = document.querySelectorAll("[data-lightbox]");
+            clickables.forEach(function (el) {
+                var src = el.getAttribute("data-lightbox");
+                var caption = el.getAttribute("data-lightbox-caption") || "";
+                items.push({ src: src, caption: caption, el: el });
+            });
+            items.forEach(function (item, i) {
+                item.el.setAttribute("data-lightbox-index", i);
+            });
+        }
+
+        function open(index) {
+            if (!items.length) return;
+            currentIndex = index;
+            update();
+            overlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function close() {
+            overlay.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+
+        function update() {
+            var item = items[currentIndex];
+            if (!item) return;
+            imgEl.src = item.src;
+            captionEl.textContent = item.caption;
+            counterEl.textContent = (currentIndex + 1) + " / " + items.length;
+            prevBtn.style.display = items.length > 1 ? "" : "none";
+            nextBtn.style.display = items.length > 1 ? "" : "none";
+        }
+
+        function prev() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            update();
+        }
+
+        function next() {
+            currentIndex = (currentIndex + 1) % items.length;
+            update();
+        }
+
+        document.addEventListener("click", function (e) {
+            var target = e.target.closest("[data-lightbox]");
+            if (target && !target.classList.contains("product-thumbnail")) {
+                e.preventDefault();
+                collectImages();
+                var idx = parseInt(target.getAttribute("data-lightbox-index"), 10);
+                if (isNaN(idx)) idx = 0;
+                open(idx);
+            }
+        });
+
+        closeBtn.addEventListener("click", close);
+        prevBtn.addEventListener("click", prev);
+        nextBtn.addEventListener("click", next);
+
+        overlay.addEventListener("click", function (e) {
+            if (e.target === overlay) close();
+        });
+
+        document.addEventListener("keydown", function (e) {
+            if (!overlay.classList.contains("active")) return;
+            if (e.key === "Escape") close();
+            if (e.key === "ArrowLeft") prev();
+            if (e.key === "ArrowRight") next();
+        });
+    }
+
     // INICIALIZACIÓN
     document.addEventListener("DOMContentLoaded", function () {
         initFaqAccordion();
@@ -334,5 +422,6 @@
         initProductGallery();
         initContactForm();
         initActiveNav();
+        initLightbox();
     });
 })();

@@ -966,7 +966,7 @@ footer {
     font-weight: 500;
     line-height: 24px;
     color: #171717;
-    font-style: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     flex-grow: 1;
 }
 

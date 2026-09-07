@@ -95,6 +95,12 @@ nav ul {
   padding-bottom: 4px;
 }
 
+.nav-active {
+  font-weight: 700;
+  border-bottom: 2px solid #171717;
+  padding-bottom: 4px;
+}
+
 .btn-primary {
   background: #2C4C5C;
   color: #F2F0EF;

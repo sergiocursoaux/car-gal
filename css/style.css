@@ -326,7 +326,7 @@ nav ul {
 .category {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
@@ -341,7 +341,7 @@ nav ul {
 .ref {
     font-size: 12px;
     font-weight: 400;
-    color: #6C8494;
+    color: #4A6A7A;
 }
 
 /* PÉ DE PÁXINA */
@@ -527,7 +527,7 @@ footer {
 .stat-card .label {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -588,7 +588,7 @@ footer {
 .team-member .role {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
@@ -894,7 +894,7 @@ footer {
     gap: 8px;
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
@@ -902,7 +902,7 @@ footer {
 .project-card .meta .dot {
     width: 4px;
     height: 4px;
-    background: #6C8494;
+    background: #4A6A7A;
     border-radius: 50%;
 }
 
@@ -1000,7 +1000,7 @@ footer {
 .testimonial-author-info .role {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
@@ -1034,7 +1034,7 @@ footer {
 .sidebar-group h4 {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 16px;
@@ -1120,7 +1120,7 @@ footer {
 }
 
 .search-bar .search-icon {
-    color: #6C8494;
+    color: #4A6A7A;
     font-size: 16px;
 }
 
@@ -1136,7 +1136,7 @@ footer {
 }
 
 .search-bar input::placeholder {
-    color: #6C8494;
+    color: #4A6A7A;
 }
 
 .sort-group {
@@ -1148,7 +1148,7 @@ footer {
 .sort-group label {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
@@ -1207,7 +1207,7 @@ footer {
 .catalog-product-info .category {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
@@ -1232,7 +1232,7 @@ footer {
 .catalog-product-info .ref {
     font-size: 12px;
     font-weight: 400;
-    color: #6C8494;
+    color: #4A6A7A;
 }
 
 .catalog-product-footer {
@@ -1287,7 +1287,7 @@ footer {
 }
 
 .breadcrumb a {
-    color: #6C8494;
+    color: #4A6A7A;
     text-decoration: none;
 }
 
@@ -1362,7 +1362,7 @@ footer {
 .product-detail-info .ref-detail {
     font-size: 14px;
     font-weight: 500;
-    color: #6C8494;
+    color: #4A6A7A;
 }
 
 .product-detail-info .divider {
@@ -1374,7 +1374,7 @@ footer {
 .product-description h4 {
     font-size: 14px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
@@ -1390,7 +1390,7 @@ footer {
 .product-compatibility h4 {
     font-size: 14px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
@@ -1513,7 +1513,7 @@ footer {
 .contact-detail-text h4 {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 4px;
@@ -1535,7 +1535,7 @@ footer {
 .contact-social h4 {
     font-size: 12px;
     font-weight: 700;
-    color: #6C8494;
+    color: #4A6A7A;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 16px;

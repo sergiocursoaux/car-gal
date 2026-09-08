@@ -1233,7 +1233,7 @@ footer {
 .badge-stock {
     padding: 4px 8px;
     border-radius: 9999px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -1241,7 +1241,7 @@ footer {
 .badge-stock.low-stock { background: #FFF; color: #E65100; }
 .badge-stock.out-of-stock { background: #FFF; color: #D32F2F; }
 
-.catalog-product-info h4 {
+.catalog-product-info h3 {
     font-size: 16px;
     font-weight: 600;
     color: #171717;

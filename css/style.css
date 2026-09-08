@@ -652,9 +652,9 @@ footer {
     width: fit-content;
 }
 
-.badge-reparacion { background: #B8BFC1; color: #2E7D32; }
-.badge-especialidade { background: #B8BFC1; color: #2E7D32; }
-.badge-comercial { background: #B8BFC1; color: #2E7D32; }
+.badge-reparacion { background: #B8BFC1; color: #1B5E20; }
+.badge-especialidade { background: #B8BFC1; color: #1B5E20; }
+.badge-comercial { background: #B8BFC1; color: #1B5E20; }
 
 .service-detail-content h3 {
     font-size: 24px;

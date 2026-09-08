@@ -645,7 +645,7 @@ footer {
     display: inline-block;
     padding: 6px 12px;
     border-radius: 9999px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.6px;
@@ -1310,7 +1310,7 @@ footer {
 }
 
 .breadcrumb .separator {
-    color: #B8BFC1;
+    color: #666666;
 }
 
 .breadcrumb .current {
